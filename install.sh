@@ -14,7 +14,7 @@ echo "--------------------------------------------------------------------------
 echo ""
 
 # === 基础配置 ===
-DOMAIN="socks.frankcn.dpdns.org"
+DOMAIN="socks.xxxvideo.dpdns.org"
 TUNNEL_NAME="socks-tunnel"
 
 # Define directory variables
@@ -150,7 +150,7 @@ tunnel: $TUNNEL_ID
 credentials-file: "${CLOUDFLARED_TUNNELS_DIR}/${TUNNEL_ID}.json"
 
 ingress:
-  - hostname: socks.frankcn.dpdns.org
+  - hostname: socks.xxxvideo.dpdns.org
     service: http://127.0.0.1:2080
     originRequest:
       noTLSVerify: true
@@ -190,9 +190,9 @@ echo ""
 sleep 5
 
 # ========== 更新CNAME记录 ========== 
-API_TOKEN="suFUEdOxzo2yUvbN37qMSqWO08b2DtRTK2f4V1IP"
-DOMAIN="frankcn.dpdns.org"      # 根域名
-SUBDOMAIN="socks.frankcn.dpdns.org" # 要更新的子域名
+API_TOKEN="kYwRWkq6HaQQQbNBx66GpEBK0ElcfeaxLK0BUtsD"
+DOMAIN="xxxvideo.dpdns.org"      # 根域名
+SUBDOMAIN="socks.xxxvideo.dpdns.org" # 要更新的子域名
 
 # Get the Tunnel ID from the JSON file in the user-specific tunnels directory
 # This ensures we are using the ID of the tunnel managed by this script instance.
